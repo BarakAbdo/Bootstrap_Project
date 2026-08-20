@@ -1,0 +1,170 @@
+/* إعدادات الصفحة */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+
+/* الهيدر */
+
+.header {
+    background-color: #1b0000;
+    color: white;
+    padding: 25px;
+}
+
+.head {
+    margin: 0;
+}
+
+
+/* القائمة */
+
+.n1 {
+    margin-top: 15px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+/* المحتوى */
+
+.m1 {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+
+/* الأقسام */
+
+.s1,
+.s2,
+.s3 {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* العناوين */
+
+.text {
+    color: #1b0000;
+}
+
+
+/* النص التعريفي */
+
+.paragraph1 {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* النموذج */
+
+.form {
+    width: 500px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #fafafa;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+/* أسماء الحقول */
+
+.name,
+.email,
+.subject,
+.message {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+
+/* الحقول */
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+/* عند الضغط على الحقل */
+
+.input:focus {
+    border-color: #1b0000;
+    box-shadow: 0 0 5px rgba(27, 0, 0, 0.2);
+}
+
+
+/* زر الإرسال */
+
+.button {
+    background-color: #1b0000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+/* عند تمرير الماوس */
+
+.button:hover {
+    background-color: #3b0000;
+    transform: scale(1.03);
+}
+
+
+/* معلومات التواصل */
+
+.info1,
+.info2,
+.info3 {
+    font-size: 17px;
+    margin: 12px;
+}
+
+
+/* الفوتر */
+
+.footer {
+    background-color: #1b0000;
+    color: white;
+    padding: 15px;
+}
+
+.paragraph2 {
+    margin: 0;
+}

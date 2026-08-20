@@ -1,0 +1,202 @@
+
+/* إعدادات عامة */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #222;
+}
+
+
+/* الهيدر */
+
+.header {
+    background: linear-gradient(135deg, #243b55, #141e30);
+    padding: 35px;
+    text-align: center;
+}
+
+.head {
+    color: white;
+    margin: 0;
+}
+
+
+/* المحتوى */
+
+.m1 {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+/* الأقسام */
+
+.s1,
+.s2,
+.s3 {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border-right: 6px solid #243b55;
+}
+
+
+/* عناوين الأقسام */
+
+.head2,
+.head3,
+.head4 {
+    color: #243b55;
+    text-align: right;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 12px;
+}
+
+
+/* قائمة الدورات */
+
+.order {
+    text-align: right;
+    padding: 20px;
+}
+
+.order li {
+    list-style: none;
+    background: #f1f4f8;
+    margin: 10px 0;
+    padding: 15px;
+    border-right: 4px solid #243b55;
+    border-radius: 5px;
+}
+
+.order li:hover {
+    background: #dfe6ee;
+}
+
+
+/* الجدول */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* رأس الجدول */
+
+.tr1 {
+    background-color: #243b55;
+    color: white;
+}
+
+.th {
+    padding: 16px;
+}
+
+
+/* خلايا الجدول */
+
+.td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+
+/* الصفوف */
+
+.tr2:nth-child(even),
+.tr3:nth-child(even),
+.tr:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+.tr2:hover,
+.tr3:hover,
+.tr:hover {
+    background-color: #e3e9f0;
+}
+
+
+/* روابط التسجيل */
+
+.link {
+    color: #243b55;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #d35400;
+}
+
+
+/* الفيديو */
+
+.video {
+    display: block;
+    width: 550px;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+
+/* الفوتر */
+
+.foot {
+    background: #141e30;
+    padding: 30px;
+    text-align: center;
+}
+
+.link4 {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.link4:hover {
+    color: #d35400;
+}
+
+
+/* نص الفوتر */
+
+.paragraph {
+    color: white;
+}
+
+
+/* الجوال */
+
+@media (max-width: 600px) {
+
+    .m1 {
+        width: 92%;
+    }
+
+    .s1,
+    .s2,
+    .s3 {
+        padding: 20px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+    .th,
+    .td {
+        padding: 8px;
+    }
+
+    .order {
+        padding: 5px;
+    }
+}

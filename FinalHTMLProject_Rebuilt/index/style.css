@@ -1,0 +1,502 @@
+/* =========================
+الإعدادات العامة
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at top right, #172554, transparent 35%),
+        radial-gradient(circle at bottom left, #3b0764, transparent 35%),
+        #050816;
+
+    color: #ffffff;
+    direction: rtl;
+    line-height: 1.8;
+    min-height: 100vh;
+}
+
+
+/* =========================
+Header
+========================= */
+
+.header {
+    background: rgba(5, 8, 22, 0.8);
+    backdrop-filter: blur(20px);
+    padding: 30px 40px;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(99, 102, 241, 0.4);
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================
+العنوان الرئيسي
+========================= */
+
+.head {
+    font-size: 40px;
+    font-weight: bold;
+
+    background: linear-gradient(
+        90deg,
+        #60a5fa,
+        #a78bfa,
+        #22d3ee
+    );
+
+    background-clip: text;
+    
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 25px rgba(96, 165, 250, 0.25);
+}
+
+
+/* =========================
+Navigation
+========================= */
+
+.n1 .ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.n1 .text {
+    list-style: none;
+}
+
+.n1 .text a {
+    display: block;
+
+    color: #e5e7eb;
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: 0.3s;
+}
+
+.n1 .text a:hover {
+    color: white;
+
+    background: rgba(99, 102, 241, 0.15);
+
+    border-color: #818cf8;
+
+    box-shadow:
+        0 0 20px rgba(99, 102, 241, 0.35);
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+Main
+========================= */
+
+.m1 {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 55px auto;
+}
+
+
+/* =========================
+الأقسام
+========================= */
+
+.s1,
+.s2,
+.s3,
+.s4 {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.07),
+            rgba(255, 255, 255, 0.025)
+        );
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35);
+
+    transition: 0.4s;
+}
+
+.s1:hover,
+.s2:hover,
+.s3:hover,
+.s4:hover {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(129, 140, 248, 0.5);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(99, 102, 241, 0.12);
+}
+
+
+/* =========================
+عناوين الأقسام
+========================= */
+
+.head2 {
+    color: #a5b4fc;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+    padding-right: 15px;
+
+    border-right: 4px solid #818cf8;
+
+    text-shadow:
+        0 0 15px rgba(129, 140, 248, 0.4);
+}
+
+.head3 {
+    color: #ffffff;
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+النصوص
+========================= */
+
+.paragraph {
+    color: #cbd5e1;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+Articles
+========================= */
+
+.art {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(99, 102, 241, 0.08),
+            rgba(34, 211, 238, 0.03)
+        );
+
+    border: 1px solid rgba(129, 140, 248, 0.15);
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    margin-top: 18px;
+
+    transition: 0.3s;
+}
+
+.art:hover {
+
+    transform: translateX(-8px);
+
+    border-color: #818cf8;
+
+    box-shadow:
+        0 0 25px rgba(99, 102, 241, 0.15);
+}
+
+
+/* =========================
+الصورة
+========================= */
+
+.img {
+    display: block;
+
+    width: 100%;
+    max-width: 700px;
+
+    height: auto;
+
+    margin: 25px auto;
+
+    border-radius: 20px;
+
+    border: 2px solid rgba(129, 140, 248, 0.5);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.5);
+
+    transition: 0.4s;
+
+    cursor: pointer;
+}
+
+.img:hover {
+
+    transform: scale(1.03);
+
+    border-color: #a78bfa;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(167, 139, 250, 0.25);
+}
+
+
+/* =========================
+الفيديو
+========================= */
+
+.video {
+    display: block;
+
+    width: 100%;
+    max-width: 700px;
+
+    margin: 25px auto;
+
+    border-radius: 20px;
+
+    border: 2px solid rgba(96, 165, 250, 0.3);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================
+Form
+========================= */
+
+.inside {
+    width: 100%;
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+/* =========================
+أسماء الحقول
+========================= */
+
+.name,
+.message {
+    display: inline-block;
+
+    color: #a5b4fc;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+الحقول
+========================= */
+
+.input,
+.textarea {
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    color: white;
+
+    border: 1px solid rgba(129, 140, 248, 0.25);
+
+    border-radius: 14px;
+
+    padding: 14px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.input {
+    height: 50px;
+}
+
+.textarea {
+    height: 150px;
+
+    resize: vertical;
+}
+
+.input:focus,
+.textarea:focus {
+
+    border-color: #818cf8;
+
+    box-shadow:
+        0 0 15px rgba(129, 140, 248, 0.25);
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+زر الإرسال
+========================= */
+
+#button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #6366f1,
+            #8b5cf6,
+            #06b6d4
+        );
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 10px 30px rgba(99, 102, 241, 0.25);
+}
+
+#button:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 40px rgba(99, 102, 241, 0.45);
+}
+
+#button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+Footer
+========================= */
+
+.fot {
+
+    text-align: center;
+
+    background: rgba(5, 8, 22, 0.9);
+
+    border-top: 1px solid rgba(129, 140, 248, 0.25);
+
+    padding: 25px;
+
+    margin-top: 60px;
+}
+
+.fot .paragraph {
+
+    color: #94a3b8;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+الجوال
+========================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 22px 15px;
+    }
+
+    .head {
+        font-size: 29px;
+    }
+
+    .n1 .ul {
+        gap: 8px;
+    }
+
+    .n1 .text a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .m1 {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .s1,
+    .s2,
+    .s3,
+    .s4 {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .head2 {
+        font-size: 23px;
+    }
+
+    .paragraph {
+        font-size: 15px;
+    }
+}

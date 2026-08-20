@@ -1,0 +1,397 @@
+/* =========================
+   الإعدادات العامة
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(196, 139, 87, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(50, 80, 110, 0.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #071019,
+            #0b141e,
+            #050a10
+        );
+
+    color: #f5f1eb;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    background: rgba(7, 15, 23, 0.88);
+
+    backdrop-filter: blur(18px);
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    border-bottom: 1px solid rgba(196, 139, 87, 0.28);
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.4);
+}
+
+.head {
+    color: #e2b07a;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    margin-bottom: 24px;
+
+    text-shadow:
+        0 0 20px rgba(226, 176, 122, 0.22);
+}
+
+
+/* =========================
+   زر الصفحة الرئيسية
+========================= */
+
+.n1 {
+    margin-top: 10px;
+}
+
+.link {
+    display: inline-block;
+
+    color: #d8dde3;
+
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(226, 176, 122, 0.30);
+
+    padding: 12px 30px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: #10171f;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c48b57,
+            #e2b07a
+        );
+
+    box-shadow:
+        0 10px 30px rgba(196, 139, 87, 0.25);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   Main
+========================= */
+
+.m1 {
+    width: 90%;
+
+    max-width: 650px;
+
+    margin: 65px auto;
+}
+
+
+/* =========================
+   بطاقة الاشتراك
+========================= */
+
+.section1 {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(19, 31, 43, 0.96),
+            rgba(8, 15, 23, 0.98)
+        );
+
+    border: 1px solid rgba(139, 157, 174, 0.18);
+
+    border-radius: 26px;
+
+    padding: 45px;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* خط ديكوري */
+
+.section1::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c48b57,
+            #e2b07a,
+            transparent
+        );
+}
+
+
+/* =========================
+   Form
+========================= */
+
+.form {
+    width: 100%;
+}
+
+
+/* =========================
+   Labels
+========================= */
+
+.name1,
+.nameEmail,
+.namePassword,
+.confrimPassword {
+    display: inline-block;
+
+    color: #c4ccd5;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   جميع الحقول
+========================= */
+
+.input1,
+.input2,
+.input3,
+.input4 {
+    width: 100%;
+
+    height: 54px;
+
+    padding: 0 17px;
+
+    background: rgba(4, 10, 16, 0.75);
+
+    color: #f5f1eb;
+
+    border: 1px solid #334454;
+
+    border-radius: 13px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+
+    margin-bottom: 3px;
+}
+
+
+/* =========================
+   Placeholder
+========================= */
+
+.input1::placeholder,
+.input2::placeholder,
+.input3::placeholder,
+.input4::placeholder {
+    color: #687685;
+}
+
+
+/* =========================
+   Hover
+========================= */
+
+.input1:hover,
+.input2:hover,
+.input3:hover,
+.input4:hover {
+    border-color: #9c704b;
+}
+
+
+/* =========================
+   Focus
+========================= */
+
+.input1:focus,
+.input2:focus,
+.input3:focus,
+.input4:focus {
+    border-color: #d19a64;
+
+    background: rgba(7, 15, 23, 0.95);
+
+    box-shadow:
+        0 0 0 3px rgba(196, 139, 87, 0.10),
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   زر الاشتراك
+========================= */
+
+.button {
+    width: 100%;
+
+    height: 58px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #9d683e,
+            #c48b57,
+            #e2b07a
+        );
+
+    color: #10171f;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 12px 30px rgba(196, 139, 87, 0.18);
+}
+
+.button:hover {
+    background:
+        linear-gradient(
+            100deg,
+            #c48b57,
+            #e2b07a,
+            #f0c896
+        );
+
+    box-shadow:
+        0 15px 40px rgba(196, 139, 87, 0.30);
+
+    transform: translateY(-4px);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 70px;
+
+    background:
+        rgba(4, 9, 14, 0.90);
+
+    border-top: 1px solid rgba(139, 157, 174, 0.12);
+}
+
+.paragraph {
+    color: #71808f;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   الجوال
+========================= */
+
+@media (max-width: 600px) {
+
+    .head {
+        font-size: 30px;
+    }
+
+    .m1 {
+        width: 94%;
+
+        margin: 35px auto;
+    }
+
+    .section1 {
+        padding: 30px 20px;
+
+        border-radius: 21px;
+    }
+
+    .input1,
+    .input2,
+    .input3,
+    .input4 {
+        height: 51px;
+    }
+
+    .button {
+        height: 53px;
+    }
+}
